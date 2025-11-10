@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delius&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=delete"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <i class="fa-solid fa-utensils"></i>
+      <h1>Recipe Journal</h1>
+      <i class="fa-solid fa-utensils"></i>
+    </header>
+    <main>
+      <form action="">
+        <div class="display">
+          <div class="input">
+            <label for="dish-name">Dish name</label>
+            <input type="text" id="dish-name" />
+          </div>
+          <div class="input">
+            <label for="dish-ingredients">Ingredients</label>
+            <textarea
+              id="dish-ingredients"
+              rows="4"
+              placeholder="Separate ingredients using commas."
+              required
+            ></textarea>
+          </div>
+          <div class="input">
+            <label for="dish-directions">Directions</label>
+            <textarea
+              id="dish-directions"
+              rows="4"
+              placeholder="Separate directions using periods."
+              required
+            ></textarea>
+          </div>
+        </div>
+        <button type="button" class="create-btn" id="create-btn">
+          Create recipe
+        </button>
+      </form>
+      <p id="warning-label">Please add a recipe!</p>
+      <section id="recipe"></section>
+    </main>
+  </body>
+</html>
